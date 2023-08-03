@@ -1,0 +1,64 @@
+.hidden {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    line-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.loading-block {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+form {
+    width: 100%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.filePicker, .sendButton {
+    width: 45%;
+    text-align: center;
+    padding: 20px 35px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+    box-shadow: 0px 0px 2px hsla(0,0%,60%,0.1),0px 8px 28px hsla(0,0%,60%,0.3);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.filePicker:hover, .sendButton:hover {
+    background-color: var(--yellowHover);
+    transition: 0.3s;
+}
+
+.filePicker:active, .sendButton:active {
+    background-color: var(--yellowActive);
+    transition: 0.3s;
+}
+
+.error-text {
+    margin-top: 20px;
+    color: var(--red);
+}
+
+.sendButton:disabled, .filePicker:disabled {
+    background-color: var(--yellowDisabled);
+}
+
+.load-files {
+    margin-top: 40px;
+}
+
+.load-files .load-file:not(:last-child) {
+    margin-bottom: 10px;
+}
